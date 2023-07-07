@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="form-buttons">
+        <button id="buyButton" onclick="showTab('buy')">Buy</button>
+        <button id="sellButton" onclick="showTab('sell')">Sell</button>
+    
+    </div>
+  
+    <div id="buyTab" class="tab active">
+      <h2>Buy Page</h2>
+     <form id="form" class="form1">
+        <div>
+            <label for="startDate">From</label>
+            <input type="date" id="startDate" placeholder="Start Date">
+            <label for="endDate">To</label>
+            <input type="date" id="endDate" placeholder="End Date">
+        </div>
+        <div class="inside-form1-checkboxes">
+            <div class="inside-form1-checboxes-elements">
+                <input type="checkbox" id="checkbox1" name="tabCheckbox" value="All">
+                <label for="checkbox1">Total no.of.orders in a day received </label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2" name="tabCheckbox" value="Prepaid">
+                <label for="checkbox2">Total no.of orders - Prepaid </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="checkbox3" name="tabCheckbox" value="COD">
+                <label for="checkbox3">Total Numbers of Orders-cod</label>
+            </div>
+            <div> 
+               <input type="checkbox" id="checkbox4" name="tabCheckbox" value="Dispatched">
+               <label for="checkbox4">Total Numbers of Orders Dispatched</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox5" name="tabCheckbox" value="Successful">
+                <label for="checkbox5">Total Number of Orders fulfilled/recieved by the Customers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox6" name="tabCheckbox" value="Cancel">
+                <label for="checkbox6">Total number of Cancelled Orders</label>
+            </div>
+          
+          
+          
+        </div>
+   
+         <div>
+            <button type="submit">Submit</button>
+         </div>
+        
+  </form>
+
+  <div id="dataBox" class="data-box"></div>
+         
+    </div>
+
+    <div id="sellTab" class="tab">
+        <h2>Sell Page</h2>
+    <form id="form1" class="form2">
+      <div>
+        <label for="startDate1">From</label>
+        <input type="date" id="startDate1" placeholder="Start Date">
+        <label for="endDate1">To</label>
+        <input type="date" id="endDate1" placeholder="End Date">
+       
+      </div>
+      <div class="inside-form2-checkboxes">
+        <div>
+            <input type="checkbox" id="checkboxsell1" name="tabCheckbox1" value="All">
+            <label for="checkboxsell1">Total no.of.orders in a day received</label>
+        </div>
+        <div>
+            <input type="checkbox" id="checkboxsell2" name="tabCheckbox1" value="Successful">
+            <label for="checkboxsell2">Total no. of orders sell completed</label>
+        </div>
+        <div>
+            
+        <input type="checkbox" id="checkboxsell3" name="tabCheckbox1" value="Cancel">
+        <label for="checkboxsell3">Total Number of Orders Cancelled</label>
+        </div>
+        <div>
+          
+        <input type="checkbox" id="checkboxsell4" name="tabCheckbox1" value="Inventory">
+        <label for="checkboxsell4">Total Number of Products added To Inventory</label>
+        </div>
+        
+      
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div> 
+  </form>
+
+  <div id="dataBox2" class="data-box2"></div>
+    </div>
+
+  
+
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.data-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.data-box2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.tab {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inside-form1-checkboxes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+
+.form2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inside-form2-checkboxes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+
+.form-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
